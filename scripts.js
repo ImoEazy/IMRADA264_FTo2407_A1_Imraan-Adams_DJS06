@@ -13,3 +13,11 @@ const products = [
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
 ]
+
+// 1. ForEach basics
+provinces.forEach(province => console.log(province));
+names.forEach(name => console.log(name));
+names.forEach((name, index) => console.log(`${name} (${provinces[index]})`));
+
+//2. Uppercase transformation
+console.log(provinces.map(provinces => provinces.toUpperCase()));
