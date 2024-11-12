@@ -4,6 +4,11 @@ const provinces = ['Western Cape', 'Gauteng', 'Northern Cape', 'Eastern Cape', '
 // A list of names:
 const names = ['Ashwin', 'Sibongile', 'Jan-Hendrik', 'Sifso', 'Shailen', 'Frikkie']
 
+//exercise 1 - forEach Basics:
+//log each name and each province separately
+names.forEach(name => console.log(name)); //logs each name 
+provinces.forEach(province => console.log(province)); //logs each province
+
 // A list of products with prices:
 const products = [
   { product: 'banana', price: "2" },
