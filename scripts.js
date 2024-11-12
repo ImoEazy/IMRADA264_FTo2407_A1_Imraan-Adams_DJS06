@@ -54,6 +54,40 @@ const products = [
   { product: 'tea', price: '' },
 ]
 
+
+//Advanced exercises (Single 'console.log' execution)
+
+//Exercise 1 - log products
+console.log(products.map(product => product.product)); //logs an array of each product name 
+
+//Exercise 2 - filter by name length
+console.log(products.filter((product) => product.product.length <= 5)); //logs product properties that are <= 5 characters
+
+//Exercise 3 - price manipulation
+console.log(
+  products
+  .filter((product => product.price !== "")) //filter out products without prices
+  .map(product => ({...product, //to keep other properties as they are
+    price: parseFloat(product.price) || 0 //convert "price" to a number or set 0 to empty strings
+  }))
+  .reduce((acc, product) => acc + product.price, 0) //logs the total price
+);
+
+//Exercise 4 - concatenate product names
+console.log(`"${products.reduce((acc, product) => acc + " " + product.product, " ").trim()}"`); //logs single string of product names 
+
+//Exercise 5 - Find extremes in Prices 
+console.log(
+  
+);
+
+
+
+
+
+
+
+
 // 1. ForEach basics
 //provinces.forEach(province => console.log(province));
 //names.forEach(name => console.log(name));
