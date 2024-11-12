@@ -9,6 +9,10 @@ const names = ['Ashwin', 'Sibongile', 'Jan-Hendrik', 'Sifso', 'Shailen', 'Frikki
 names.forEach(name => console.log(name)); //logs each name 
 provinces.forEach(province => console.log(province)); //logs each province
 
+names.forEach((name, index) => {
+  console.log(`${name} (${provinces[index]})`);
+}); //logs names with matching provinces in the format "Name (Province)"
+
 // A list of products with prices:
 const products = [
   { product: 'banana', price: "2" },
